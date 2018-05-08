@@ -1,5 +1,8 @@
+com\itemtracker\model\dao\KopalniaRepository.class
 com\itemtracker\controller\HelloController.class
-com\itemtracker\controller\LoginController.class
-com\itemtracker\controller\ItemTrackerController.class
 com\itemtracker\service\LoginService.class
-com\itemtracker\main\Main.class
+com\itemtracker\controller\LoginController.class
+com\itemtracker\model\dao\Kopalnia.class
+com\itemtracker\controller\DataController.class
+com\itemtracker\Main.class
+com\itemtracker\controller\ItemTrackerController.class

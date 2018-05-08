@@ -1,0 +1,19 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+
+    xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<title>First Web Application</title>
+
+</head>
+<body>
+	<table>
+      <tr th:each="kopalnia : ${kopalnie}">
+         <td th:text="${kopalnia.name}">ads</td>
+      </tr>
+</table>
+
+
+</body>
+</html>
