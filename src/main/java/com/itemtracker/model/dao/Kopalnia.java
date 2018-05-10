@@ -6,16 +6,17 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 @Entity
-@Table(name = "Kopalnia")
+@Table(name = "Kopalnia",uniqueConstraints = {@UniqueConstraint(columnNames="name")})
 public class Kopalnia {
 
 	@Id@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name = "id", nullable = false, unique = true, length = 11)
 	int id;
 	
-	@Column(name ="name",length= 50)
+	@Column(name ="name",length= 50,unique=true)
 	String name;
 
 	public Kopalnia() {}

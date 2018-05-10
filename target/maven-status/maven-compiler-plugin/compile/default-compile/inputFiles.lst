@@ -1,8 +1,15 @@
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\controller\DataController.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\model\dao\Kopalnia.java
+C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\model\dao\CenaRepository.java
+C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\model\dao\Dane.java
+C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\model\dao\SortymentRepository.java
+C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\controller\LoginController.java
+C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\main\Parser.java
+C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\model\dao\DaneRepository.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\service\LoginService.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\controller\ItemTrackerController.java
+C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\model\dao\Cena.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\Main.java
-C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\controller\LoginController.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\controller\HelloController.java
+C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\model\dao\Sortyment.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\model\dao\KopalniaRepository.java
