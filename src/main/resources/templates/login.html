@@ -1,28 +1,26 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-
 <head>
-
-<title>First Web Application</title>
-
+<!--/*/ <th:block th:include="fragments/headerinclude :: head"></th:block> /*/-->
 </head>
-
 <body>
-
-    <font color="red">${errorMessage}</font>
-
-    <form method="post">
-
-        Name : <input type="text" name="name" />
-
-        Password : <input type="password" name="password" /> 
-
-        <input type="submit" />
-
-    </form>
-
+	
+	<div tiles:fragment="content">
+	<!--/*/ <th:block th:include="fragments/header :: header"></th:block> /*/-->
+		<form name="f" th:action="@{/login}" method="post">
+			<fieldset>
+				<legend>Please Login</legend>
+				<div th:if="${param.error}" class="alert alert-error">Invalid
+					username and password.</div>
+				<div th:if="${param.logout}" class="alert alert-success">You
+					have been logged out.</div>
+				<label for="username">Username</label> <input type="text"
+					id="username" name="username" /> <label for="password">Password</label>
+				<input type="password" id="password" name="password" />
+				<div class="form-actions">
+					<button type="submit" class="btn">Log in</button>
+				</div>
+			</fieldset>
+		</form>
+	</div>
 </body>
-
 </html>

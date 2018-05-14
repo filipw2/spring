@@ -1,28 +1,26 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
-
-    xmlns:th="http://www.thymeleaf.org">
+	xmlns:th="http://www.thymeleaf.org">
 
 <head>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
-<title>First Web Application</title>
-
+<!--/*/ <th:block th:include="fragments/headerinclude :: head"></th:block> /*/-->
 </head>
 <body>
+	<!--/*/ <th:block th:include="fragments/header :: header"></th:block> /*/-->
 	<table class="table">
-      <tr th:each="cena : ${ceny}">
-         <td th:text="${cena.dane_id.kopalnia_id.name}">kopalnia</td>
-         <td th:text="${cena.dane_id.sortyment_id.name}">sortyment</td>
-         <td th:text="${cena.dane_id.klasa}">klasa</td>
-         <td th:text="${cena.dane_id.wymiar_dolny}">wymiar_doln</td>
-         <td th:text="${cena.dane_id.wymiar_gorny}">wymiar_doln</td>
-         <td th:text="${cena.dane_id.popiol}">wymiar_doln</td>
-         <td th:text="${cena.dane_id.siarka}">wymiar_doln</td>
-         <td th:text="${cena.dane_id.spiekalnosc_od}">wymiar_doln</td>
-         <td th:text="${cena.dane_id.spiekalnosc_do}">wymiar_doln</td>
-         <td th:text="${cena.cena_bez_akcyzy}">wymiar_doln</td>
-         <td th:text="${cena.cena_z_akcyza}">wymiar_doln</td>
-      </tr>
-</table>
+		<tr th:each="cena : ${ceny}">
+			<td th:text="${cena.dane_id.kopalnia_id.name}">kopalnia</td>
+			<td th:text="${cena.dane_id.sortyment_id.name}">sortyment</td>
+			<td th:text="${cena.dane_id.klasa}">klasa</td>
+			<td th:text="${cena.dane_id.wymiar_dolny}">wymiar_doln</td>
+			<td th:text="${cena.dane_id.wymiar_gorny}">wymiar_doln</td>
+			<td th:text="${cena.dane_id.popiol}">wymiar_doln</td>
+			<td th:text="${cena.dane_id.siarka}">wymiar_doln</td>
+			<td th:text="${cena.dane_id.spiekalnosc_od}">wymiar_doln</td>
+			<td th:text="${cena.dane_id.spiekalnosc_do}">wymiar_doln</td>
+			<td th:text="${cena.cena_bez_akcyzy}">wymiar_doln</td>
+			<td th:text="${cena.cena_z_akcyza}">wymiar_doln</td>
+		</tr>
+	</table>
 
 
 </body>

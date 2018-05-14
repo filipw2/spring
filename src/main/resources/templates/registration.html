@@ -1,0 +1,34 @@
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:tiles="http://www.thymeleaf.org">
+<head>
+<!--/*/ <th:block th:include="fragments/headerinclude :: head"></th:block> /*/-->
+</head>
+<body>
+	<!--/*/ <th:block th:include="fragments/header :: header"></th:block> /*/-->
+	<div tiles:fragment="content">
+		<form action="#" name="f" th:object="${userForm}"
+			th:action="@{/registration}" method="post">
+			<fieldset>
+				<legend>Registration</legend>
+				<div th:if="${param.error}" class="alert alert-error">Invalid
+					username and password.</div>
+				<div th:if="${param.logout}" class="alert alert-success">You
+					have been logged out.</div>
+				<label for="username">Username</label> <input th:field="*{username}"
+					type="text" id="username" name="username" /> <label for="password">Password</label>
+				<input th:field="*{password}" type="password" id="password"
+					name="password" /> <label for="password">Confirm Password</label> <input
+					th:field="*{passwordConfirm}" th:errorclass="errors"
+					type="password" id="passwordConfirm" name="passwordConfirm" />
+				<div class="form-actions">
+					<button type="submit" class="btn">Register</button>
+				</div>
+				<ul th:if="${#fields.hasErrors('*')}">
+					<li th:each="err : ${#fields.errors('*')}" th:text="${err}">Input
+						is incorrect</li>
+				</ul>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
