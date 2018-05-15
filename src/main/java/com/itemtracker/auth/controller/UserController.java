@@ -62,10 +62,7 @@ public class UserController {
 		return "login";
 	}
 
-	@RequestMapping(value = { "/welcome" }, method = RequestMethod.GET)
-	public String welcome(Model model) {
-		return "welcome";
-	}
+	
 	@RequestMapping(value="/logout", method = RequestMethod.GET)
 	public String logoutPage (HttpServletRequest request, HttpServletResponse response) {
 	    Authentication auth = SecurityContextHolder.getContext().getAuthentication();

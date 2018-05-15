@@ -1,11 +1,11 @@
-<html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:th="http://www.thymeleaf.org">
+<html>
 
 <head>
 <!--/*/ <th:block th:include="fragments/headerinclude :: head"></th:block> /*/-->
 </head>
-<body>
-	<!--/*/ <th:block th:include="fragments/header :: header"></th:block> /*/-->
+<body class="bodyBlue">
+	<div th:replace="fragments/header :: header"/>
+	<div class="container mainDiv">
 	<table class="table">
 		<tr th:each="cena : ${ceny}">
 			<td th:text="${cena.dane_id.kopalnia_id.name}">kopalnia</td>
@@ -22,6 +22,6 @@
 		</tr>
 	</table>
 
-
+</div>
 </body>
 </html>

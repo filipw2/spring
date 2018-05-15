@@ -8,9 +8,11 @@ import org.springframework.web.servlet.ModelAndView;
 public class ItemTrackerController {
 	@RequestMapping("/welcome")
 	public ModelAndView helloWorld() {
- 
+		ModelAndView modelAndView=new ModelAndView();
 		String message = "<br><div style='text-align:center;'>"
 				+ "<h3>********** Hello World, Spring MVC Tutorial</h3>This message is coming from CrunchifyHelloWorld.java **********</div><br><br>";
-		return new ModelAndView("welcome", "message", message);
+		modelAndView.addObject("message",message);
+		
+		return modelAndView;
 	}
 }

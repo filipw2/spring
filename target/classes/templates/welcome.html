@@ -1,12 +1,14 @@
-
 <html>
 <head>
 <!--/*/ <th:block th:include="fragments/headerinclude :: head"></th:block> /*/-->
 
 </head>
-<body>
+<body class="bodyBlue">
+<div th:replace="fragments/header :: header"/>
+<div class="container mainDiv">
 	
-	<!--/*/ <th:block th:include="fragments/header :: header"></th:block> /*/-->
-	${message}
+		
+	<span th:utext="${message}"></span>
+	</div>
 </body>
 </html>
