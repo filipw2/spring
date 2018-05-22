@@ -20,6 +20,7 @@ import com.itemtracker.model.dao.Kopalnia;
 import com.itemtracker.model.dao.KopalniaRepository;
 import com.itemtracker.model.dao.Sortyment;
 import com.itemtracker.model.dao.SortymentRepository;
+import com.itemtracker.service.CenaService;
 @Service
 public class Parser {
 	
@@ -31,7 +32,8 @@ public class Parser {
 	DaneRepository daneRepository;
 	@Autowired
 	SortymentRepository sortymentRepository;
-	
+	@Autowired
+	CenaService cenaService;
 	public Parser() {}
 	
 	//TODO - ref
@@ -83,17 +85,17 @@ public class Parser {
 				cena.setCena_z_akcyza(Double.valueOf(d.select("td:nth-child(11)").html()));
 				
 				ceny.add(cena);
-				try {
-				cenaRepository.save(cena);
-				}catch(Exception e) {}
+				
 			}
-			
+			cenaService.insertCenas(ceny);
 			System.out.println(ceny.size());
 			System.out.println(cenaRepository);
 		//	cenaRepository.saveAll(ceny);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}catch(IllegalArgumentException ei) {
+			ei.printStackTrace();
 		}
 	}
 	

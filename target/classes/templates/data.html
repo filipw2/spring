@@ -4,24 +4,44 @@
 <!--/*/ <th:block th:include="fragments/headerinclude :: head"></th:block> /*/-->
 </head>
 <body class="bodyBlue">
-	<div th:replace="fragments/header :: header"/>
+	<div th:replace="fragments/header :: header" />
 	<div class="container mainDiv">
-	<table class="table">
-		<tr th:each="cena : ${ceny}">
-			<td th:text="${cena.dane_id.kopalnia_id.name}">kopalnia</td>
-			<td th:text="${cena.dane_id.sortyment_id.name}">sortyment</td>
-			<td th:text="${cena.dane_id.klasa}">klasa</td>
-			<td th:text="${cena.dane_id.wymiar_dolny}">wymiar_doln</td>
-			<td th:text="${cena.dane_id.wymiar_gorny}">wymiar_doln</td>
-			<td th:text="${cena.dane_id.popiol}">wymiar_doln</td>
-			<td th:text="${cena.dane_id.siarka}">wymiar_doln</td>
-			<td th:text="${cena.dane_id.spiekalnosc_od}">wymiar_doln</td>
-			<td th:text="${cena.dane_id.spiekalnosc_do}">wymiar_doln</td>
-			<td th:text="${cena.cena_bez_akcyzy}">wymiar_doln</td>
-			<td th:text="${cena.cena_z_akcyza}">wymiar_doln</td>
-		</tr>
-	</table>
+		<table class="table table-bordered texter-center">
+			<thead class="thead-dark">
+				<tr>
+					<th rowspan="2" th:text="#{label.data.table.kopalnia_name}">1</th>
+					<th rowspan="2" th:text="#{label.data.table.sortyment}">2</th>
+					<th rowspan="2" th:text="#{label.data.table.klasa}">3</th>
+					<th colspan="2" th:text="#{label.data.table.wymiar}">4</th>
+					<th rowspan="2" th:text="#{label.data.table.popiol}">5</th>
+					<th rowspan="2" th:text="#{label.data.table.siarka}">6</th>
+					<th colspan="2" th:text="#{label.data.table.spiekalnosc}">7</th>
+					<th colspan="2" th:text="#{label.data.table.cena}">8</th>
+				</tr>
+				<tr>
+					<th th:text="#{label.data.table.wymiar_dolny}">9</th>
+					<th th:text="#{label.data.table.wymiar_gorny}">10</th>
+					<th th:text="#{label.data.table.spiekalnosc_od}">11</th>
+					<th th:text="#{label.data.table.spiekalnosc_do}">12</th>
+					<th th:text="#{label.data.table.cena_bez}">13</th>
+					<th th:text="#{label.data.table.cena_z}">14</th>
+				</tr>
+			</thead>
+			<tr scope="row" th:each="cena : ${ceny}">
+				<td th:text="${cena.dane_id.kopalnia_id.name}">kopalnia</td>
+				<td th:text="${cena.dane_id.sortyment_id.name}">sortyment</td>
+				<td th:text="${cena.dane_id.klasa}">klasa</td>
+				<td th:text="${cena.dane_id.wymiar_dolny}">wymiar_doln</td>
+				<td th:text="${cena.dane_id.wymiar_gorny}">wymiar_doln</td>
+				<td th:text="${cena.dane_id.popiol}">wymiar_doln</td>
+				<td th:text="${cena.dane_id.siarka}">wymiar_doln</td>
+				<td th:text="${cena.dane_id.spiekalnosc_od}">wymiar_doln</td>
+				<td th:text="${cena.dane_id.spiekalnosc_do}">wymiar_doln</td>
+				<td th:text="${cena.cena_bez_akcyzy}">wymiar_doln</td>
+				<td th:text="${cena.cena_z_akcyza}">wymiar_doln</td>
+			</tr>
+		</table>
 
-</div>
+	</div>
 </body>
 </html>

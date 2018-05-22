@@ -1,5 +1,6 @@
 com\itemtracker\auth\service\SecurityServiceImpl.class
 com\itemtracker\main\Parser.class
+com\itemtracker\Config.class
 com\itemtracker\auth\service\SecurityService.class
 com\itemtracker\model\dao\CenaRepository.class
 com\itemtracker\auth\service\UserServiceImpl.class
@@ -24,3 +25,4 @@ com\itemtracker\auth\model\UserDto.class
 com\itemtracker\model\dao\Kopalnia.class
 com\itemtracker\auth\model\Role.class
 com\itemtracker\auth\model\User.class
+com\itemtracker\service\CenaService.class

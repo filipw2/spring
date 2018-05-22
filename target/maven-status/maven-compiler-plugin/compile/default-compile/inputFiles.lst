@@ -11,12 +11,14 @@ C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\auth\reposito
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\auth\service\SecurityServiceImpl.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\auth\model\UserDto.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\auth\service\UserServiceImpl.java
+C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\Config.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\auth\service\UserDetailServiceImp.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\model\dao\Sortyment.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\model\dao\KopalniaRepository.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\controller\DataController.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\auth\validator\UserValidator.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\main\Parser.java
+C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\service\CenaService.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\model\dao\DaneRepository.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\controller\ItemTrackerController.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\auth\model\User.java
