@@ -13,6 +13,7 @@ C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\auth\model\Us
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\auth\service\UserServiceImpl.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\Config.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\auth\service\UserDetailServiceImp.java
+C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\model\dao\CenaRepositoryCustom.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\model\dao\Sortyment.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\model\dao\KopalniaRepository.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\controller\DataController.java
@@ -25,4 +26,5 @@ C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\auth\model\Us
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\Main.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\auth\WebSecurityConfig.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\controller\HelloController.java
+C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\model\dao\CenaRepositoryCustomImpl.java
 C:\Users\Filip\workspace\ItemTracker\src\main\java\com\itemtracker\auth\service\UserService.java

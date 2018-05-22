@@ -16,7 +16,7 @@ import javax.persistence.TemporalType;
 import javax.persistence.UniqueConstraint;
 
 @Entity
-@Table(uniqueConstraints = {@UniqueConstraint(columnNames="dane_id")})
+@Table
 public class Cena {
 
 	@Id@GeneratedValue(strategy=GenerationType.IDENTITY)

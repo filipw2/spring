@@ -22,7 +22,7 @@ public class DataController {
 	public ModelAndView getData() {
 		parser.parse();
 		ModelAndView modelAndView=new ModelAndView();
-		List<Cena> ceny = cenaRepository.findAll();
+		List<Cena> ceny = cenaRepository.getLatestCenas();
 		//kopalnie.stream().forEach(d->System.out.println(d.getName()));
 		System.out.println(ceny.size());
 		modelAndView.addObject("ceny",ceny);

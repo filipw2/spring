@@ -1,4 +1,6 @@
 com\itemtracker\auth\service\SecurityServiceImpl.class
+com\itemtracker\model\dao\CenaRepositoryCustomImpl.class
+com\itemtracker\model\dao\CenaRepositoryCustom.class
 com\itemtracker\main\Parser.class
 com\itemtracker\Config.class
 com\itemtracker\auth\service\SecurityService.class
